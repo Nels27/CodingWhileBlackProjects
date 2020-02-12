@@ -46,3 +46,8 @@ GraphQL gives you the ability to build your own sandwich
 
 
 ##### Using a library called Graphene (Python with Graphql)
+
+
+You can also use the GraphQL playground
+
+This uses SQL syntax though
