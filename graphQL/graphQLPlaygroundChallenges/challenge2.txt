@@ -1,0 +1,59 @@
+mutation{
+
+  createUser(email: "Dummy3", name: "myFunc", roleIds:[1 2 3])
+  {
+    user
+    {
+      email
+      name
+
+    }
+  }
+  
+  createEvent(name: "ToC", createdBy: 103, description: "CwB project")
+  {
+    event
+    {
+      name
+      createdBy
+      description
+  
+    }
+    
+  }
+
+  ~ works with just the creation of the user... after that the API throws up on me
+  
+  
+  
+  
+  updateUser(email:"Dummy3", name:"TBD", roleIds:[1 2 3], id:103 )
+  {
+    user
+    {
+      id
+      email
+      roles
+      {
+        edges
+        {
+          node
+          {
+            id
+          }
+        }
+      }
+    }
+  }
+  
+  deleteRole(id: 2)
+  
+  {
+    roleId
+  }
+  
+  deleteEvent(id:103)
+  {
+    eventId
+  }
+}

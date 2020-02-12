@@ -1,0 +1,18 @@
+{
+  events(where:{idGt: 100, idLt: 121, and: [{nameLike:"%e%",nameLike: "%a%"}]})
+  {
+    edges
+    {
+      node
+      {
+        id
+        name
+        createdBy
+        
+      }
+    }
+  }
+}
+
+
+~Kind of works.... also grabs words that contain only an e or an a. Need the filter to take words that have both.
