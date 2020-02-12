@@ -1,0 +1,18 @@
+{
+  events(where:{idGt: 100, idLt: 121, })
+  {
+    edges
+    {
+      node
+      {
+        id
+        name
+        createdBy
+        
+      }
+    }
+  }
+}
+
+
+

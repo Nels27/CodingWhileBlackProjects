@@ -1,0 +1,20 @@
+mutation{
+  createEvent(createdBy: 2, description: "Test event", name:"dummy")
+  {
+    event
+    {
+      id
+    }
+  }
+  createUser(email: "NelsonRaphael27@gmail.com" roleIds:[1 2 3])
+  {
+    event
+    {
+      id
+      name
+      description
+      createdBy
+
+    }
+  }
+}
